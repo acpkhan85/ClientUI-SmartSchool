@@ -10,6 +10,7 @@ import { HeadmasterComponent } from './headmaster/headmaster.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { EventandnewsComponent } from './eventandnews/eventandnews.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,13 @@ import { FooterComponent } from './footer/footer.component';
     HeadmasterComponent,
     AboutusComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    EventandnewsComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot([ { path: 'home', component: HomeComponent }, 
     { path: 'aboutUs', component: AboutusComponent }, 
-    // { path: 'newsevent', component: EventNewsComponent }, 
+    { path: 'newsevent', component: EventandnewsComponent }, 
     // { path: 'admission', component: AdmissionComponent }, 
     { path: '**', redirectTo: 'home', pathMatch: 'full' } ])
   ],
